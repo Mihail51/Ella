@@ -15,11 +15,18 @@
 		<div class="wrapper header__wrapper">
 			<div class="conteiner header__conteiner">
 				<a href="#" class="logo header__logo"><img src="images/Logotype (EY) gold circle 3.svg" alt="Логотип"></a>
-				<ul class="menu header__menu">
-					<li class="item menu__item header__menu__item_1"><a href="#">Обо мне</a></li>
-					<li class="item menu__item header__menu__item_2"><a href="#">О курсе</a></li>
-					<li class="item menu__item header__menu__item_3"><a href="#">Контакты</a></li>
-				</ul>
+				<!-- Hamburger icon -->
+				<input type="checkbox" name="" id="side-menu" class="side-menu">
+				<label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+				<!-- MENU -->
+				<nav class="nav header__nav">
+					<ul class="menu header__menu">
+						<li class="item menu__item header__menu__item_1"><a href="#">Обо мне</a></li>
+						<li class="item menu__item header__menu__item_2"><a href="#">О курсе</a></li>
+						<li class="item menu__item header__menu__item_3"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Language menu -->
 				<select name="change-lang" id="">
 					<option value="ru" selected="selected">Ru</option>
 					<option value="heb">Heb</option>
