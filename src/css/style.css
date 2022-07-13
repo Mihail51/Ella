@@ -1,0 +1,27 @@
+.page {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.conteiner {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.header__wrapper {
+	width: 100%;
+	min-height: 84px;
+	background: #000;
+}
+.header__conteiner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo img {
+	width: 54px;
+}
+.menu__item {
+	display: inline;
+	margin: 0 25px;
+}
