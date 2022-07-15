@@ -1,27 +1,203 @@
 .page {
 	max-width: 1366px;
 	margin: 0 auto;
+	min-width: 320px;
 }
 .conteiner {
+	position: relative;
 	width: 1140px;
 	margin: 0 auto;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* HEADER */
-.header__wrapper {
-	width: 100%;
-	min-height: 84px;
+
+.main__header {
 	background: #000;
 }
-.header__conteiner {
+.header__wrapper {
+	min-height: 84px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
-.header__logo img {
+/* LOGO */
+.header__logo {
 	width: 54px;
+	height: 54px;
 }
+
+/* MENU */
 .menu__item {
 	display: inline;
 	margin: 0 25px;
+	list-style: none;
+}
+.menu__item a {
+	font-style: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+}
+.menu__item a:hover {
+	text-decoration: underline;
+}
+/* MENU GAMBURGER */
+.hamb {
+	cursor: pointer;
+}
+.hamb-line {
+	position: relative;
+	display: none;
+	width: 24px;
+	height: 2px;
+	background: #fff;
+}
+.hamb-line::before, 
+.hamb-line::after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transition: all .2s ease-out;
+}
+.hamb-line::before {
+	top: 5px;
+}
+.hamb-line::after {
+	top: -5px;
+}
+.side-menu:checked ~ .header__nav {
+	max-height: 100%
+}
+.side-menu:checked ~ .hamb .hamb-line {
+	background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+	transform: rotate(-45deg);
+	top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+
+/* Предложение курса */
+.propose {
+	background: #D9D9D9;
+}
+.propose__wrapper {
+	min-height: 571px;
+	border-top: 1px solid transparent;
+}
+.propose__text_1 {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 56px;
+	font-style: normal;
+	color: #fff;
+	margin-top: 72px;
+	margin-bottom: 0;
+}
+.propose__text_2 {
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 56px;
+	font-style: normal;
+	color: #000;
+	margin-top: 9px;
+	margin-bottom: 18px;
+}
+.propose__text_3 {
+	max-width: 756px;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 49px;
+	font-style: normal;
+	color: #000;
+	margin: 0;
+}
+.propose__text_4 {
+	max-width: 451px;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 38px;
+	font-style: normal;
+	color: #000;
+}
+.propose__wrapper button {
+	width: 418px;
+	height: 57px;
+	border-radius: 29px;
+	background: #ffd84f;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
+	font-size: 30px;
+	line-height: 37px;
+	font-weight: 500;
+	color: #000;
+}
+
+
+@media (max-width: 1200px) {
+	.conteiner {
+		width: 960px;
+	}
+}
+@media (max-width: 992px) {
+	.conteiner {
+		width: 720px;
+	}
+}
+@media (max-width: 768px) {
+	.conteiner {
+		width: 540px;
+	}
+	.header__nav {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 84px;
+		overflow: hidden;
+		background: #000;
+		z-index: 1;
+		max-height: 0;
+	}
+	.hamb-line, 
+	.hamb-line::before, 
+	.hamb-line::after {
+		display: block;
+	}
+	.menu__item {
+		display: block;
+	}
+}
+@media (max-width: 576px) {
+	.conteiner {
+		width: 100%;
+		padding: 0 15px;
+	}
 }

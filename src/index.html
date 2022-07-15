@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Название сайта</title>
 	<meta name="description" content="описание не длиннее 155 символов">
   	<meta name="keywords" content="мета-теги, шаблон, html, css">
   	<link rel="stylesheet" href="css/fonts.css">
@@ -11,12 +11,13 @@
   	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-	<header class="header">
-		<div class="wrapper header__wrapper">
-			<div class="conteiner header__conteiner">
+	<!-- HEADER -->
+	<header class="header main__header">
+		<div class="conteiner header__conteiner">
+			<div class="wrapper header__wrapper">
 				<a href="#" class="logo header__logo"><img src="images/Logotype (EY) gold circle 3.svg" alt="Логотип"></a>
 				<!-- Hamburger icon -->
-				<input type="checkbox" name="" id="side-menu" class="side-menu">
+				<input type="checkbox" name="" id="side-menu" class="side-menu visually-hidden">
 				<label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
 				<!-- MENU -->
 				<nav class="nav header__nav">
@@ -27,13 +28,32 @@
 					</ul>
 				</nav>
 				<!-- Language menu -->
-				<select name="change-lang" id="">
+				<select name="change-lang" id="lang" class="lang">
 					<option value="ru" selected="selected">Ru</option>
 					<option value="heb">Heb</option>
 				</select>
 			</div>
 		</div>
 	</header>
+	<main>
+		<article class="heading main__heading visually-hidden">
+			<h1>Название сайта</h1>
+		</article>
+		<!-- Предложение курса -->
+		<section class="propose">
+			<div class="conteiner propose__conteiner">
+				<div class="wrapper propose__wrapper">
+					<p class="text propose__text propose__text_1">ПРОСТО О СЛОЖНОМ:</p>
+					<p class="text propose__text propose__text_2">ОВЛАДЕЙТЕ В СОВЕРШЕНСТВЕ</p>
+					<p class="text propose__text propose__text_3">РЕВОЛЮЦИОННОЙ ВОЛОСКОВОЙ
+					ТЕХНИКОЙ Y-BROWS</p>
+					<p class="text propose__text propose__text_4">ПОД РУКОВОДСТВОМ  ЕЁ АВТОРА
+					<span class="name">Эллы Ягодаевой</span></p>
+					<button onclick="window.location.href = '#';">Перейти к курсу</button>
+				</div>
+			</div>
+		</section>
+	</main>
 	
 </body>
 </html>
