@@ -2,13 +2,13 @@
 	max-width: 1366px;
 	margin: 0 auto;
 	min-width: 320px;
-}
+}  
 .page__lanquage_heb {
 	direction: rtl;
 }
 .page__lanquage_ru {
 	direction: ltr;
-}
+}  
 .conteiner {
 	position: relative;
 	width: 1140px;

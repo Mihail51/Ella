@@ -28,9 +28,9 @@
 					</ul>
 				</nav>
 				<!-- Language menu -->
-				<select name="change-lang" id="lang" class="lang">
-					<option class="lanquage__button lanquage__button_ru lanquage__button_ru" value="ru" selected="selected">Ru</option>
-					<option class="lanquage__button lanquage__button_heb lanquage__button_heb" value="heb">Heb</option>
+				<select name="change-lang" id="change-lang" class="change-lang">
+					<option class="lanquage__button lanquage__button_ru lanquage__button_ru" value="ru">Ru</option>
+					<option class="lanquage__button lanquage__button_heb lanquage__button_he" value="he">He</option>
 				</select>
 			</div>
 		</div>
@@ -46,31 +46,20 @@
 					<p class="text propose__text propose__text_1 lng__propose__text_1">ПРОСТО О СЛОЖНОМ:</p>
 					<p class="text propose__text propose__text_2 lng__propose__text_2">ОВЛАДЕЙТЕ В СОВЕРШЕНСТВЕ</p>
 					<p class="text propose__text propose__text_3 lng__propose__text_3">РЕВОЛЮЦИОННОЙ ВОЛОСКОВОЙ
-					ТЕХНИКОЙ Y-BROWS</p>
-					<p class="text propose__text propose__text_4 lng__propose__text_5">ПОД РУКОВОДСТВОМ  ЕЁ АВТОРА
-					<span class="name lng__name">Эллы Ягодаевой</span></p>
-					<button onclick="window.location.href = '#';" class="lng__button">Перейти к курсу</button>
+					ТЕХНИКОЙ <span>Y-BROWS</span></p>
+					<p class="text propose__text propose__text_4 lng__propose__text_4">ПОД РУКОВОДСТВОМ  ЕЁ АВТОРА
+					<span class="name lng__name-master">Эллы Ягодаевой</span></p>
+					<button onclick="window.location.href = '#';" class="lng__butt">Перейти к курсу</button>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<script type="text/javascript">
-		let page = document.querySelector('.page');
-		let languageButtonRu = document.querySelector('.lanquage__button_ru');
-		let languageButtonHeb = document.querySelector('.lanquage__button_heb');
-		
-		languageButtonRu.onclick = function() {
-			console.log('кнопка нажата');
-			page.classList.remove('page__lanquage_heb');
-			page.classList.add('page__lanquage_ru');
-		}
-		languageButtonHeb.onclick = function() {
-			console.log('кнопка нажата');
-			page.classList.remove('page__lanquage_ru');
-			page.classList.add('page__lanquage_heb');
-		}
-	</script>
+<!--	<script src="js/dir.js"></script>  --> 
+	<script src="js/lang.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/dir.js"></script>
+	
 	
 </body>
 </html>
