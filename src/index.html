@@ -10,7 +10,7 @@
   	<link rel="stylesheet" href="css/normalize.css">
   	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page">
+<body class="page page__lanquage_heb page__lanquage_ru">
 	<!-- HEADER -->
 	<header class="header main__header">
 		<div class="conteiner header__conteiner">
@@ -22,38 +22,55 @@
 				<!-- MENU -->
 				<nav class="nav header__nav">
 					<ul class="menu header__menu">
-						<li class="item menu__item header__menu__item_1"><a href="#">Обо мне</a></li>
-						<li class="item menu__item header__menu__item_2"><a href="#">О курсе</a></li>
-						<li class="item menu__item header__menu__item_3"><a href="#">Контакты</a></li>
+						<li class="item menu__item header__menu__item_1"><a class="lng__header-menu_1" href="#">Обо мне</a></li>
+						<li class="item menu__item header__menu__item_2"><a class="lng__header-menu_2" href="#">О курсе</a></li>
+						<li class="item menu__item header__menu__item_3"><a class="lng__header-menu_3" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				<!-- Language menu -->
 				<select name="change-lang" id="lang" class="lang">
-					<option value="ru" selected="selected">Ru</option>
-					<option value="heb">Heb</option>
+					<option class="lanquage__button lanquage__button_ru lanquage__button_ru" value="ru" selected="selected">Ru</option>
+					<option class="lanquage__button lanquage__button_heb lanquage__button_heb" value="heb">Heb</option>
 				</select>
 			</div>
 		</div>
 	</header>
 	<main>
 		<article class="heading main__heading visually-hidden">
-			<h1>Название сайта</h1>
+			<h1 class="lng__heading">Название сайта</h1>
 		</article>
 		<!-- Предложение курса -->
 		<section class="propose">
 			<div class="conteiner propose__conteiner">
 				<div class="wrapper propose__wrapper">
-					<p class="text propose__text propose__text_1">ПРОСТО О СЛОЖНОМ:</p>
-					<p class="text propose__text propose__text_2">ОВЛАДЕЙТЕ В СОВЕРШЕНСТВЕ</p>
-					<p class="text propose__text propose__text_3">РЕВОЛЮЦИОННОЙ ВОЛОСКОВОЙ
+					<p class="text propose__text propose__text_1 lng__propose__text_1">ПРОСТО О СЛОЖНОМ:</p>
+					<p class="text propose__text propose__text_2 lng__propose__text_2">ОВЛАДЕЙТЕ В СОВЕРШЕНСТВЕ</p>
+					<p class="text propose__text propose__text_3 lng__propose__text_3">РЕВОЛЮЦИОННОЙ ВОЛОСКОВОЙ
 					ТЕХНИКОЙ Y-BROWS</p>
-					<p class="text propose__text propose__text_4">ПОД РУКОВОДСТВОМ  ЕЁ АВТОРА
-					<span class="name">Эллы Ягодаевой</span></p>
-					<button onclick="window.location.href = '#';">Перейти к курсу</button>
+					<p class="text propose__text propose__text_4 lng__propose__text_5">ПОД РУКОВОДСТВОМ  ЕЁ АВТОРА
+					<span class="name lng__name">Эллы Ягодаевой</span></p>
+					<button onclick="window.location.href = '#';" class="lng__button">Перейти к курсу</button>
 				</div>
 			</div>
 		</section>
 	</main>
+
+	<script type="text/javascript">
+		let page = document.querySelector('.page');
+		let languageButtonRu = document.querySelector('.lanquage__button_ru');
+		let languageButtonHeb = document.querySelector('.lanquage__button_heb');
+		
+		languageButtonRu.onclick = function() {
+			console.log('кнопка нажата');
+			page.classList.remove('page__lanquage_heb');
+			page.classList.add('page__lanquage_ru');
+		}
+		languageButtonHeb.onclick = function() {
+			console.log('кнопка нажата');
+			page.classList.remove('page__lanquage_ru');
+			page.classList.add('page__lanquage_heb');
+		}
+	</script>
 	
 </body>
 </html>
