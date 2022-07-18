@@ -1,8 +1,13 @@
 .page {
-	max-width: 1366px;
+	position: relative;
+/*	max-width: 1366px;   */
 	margin: 0 auto;
 	min-width: 320px;
-}  
+	background-image: url(../images/_C__Users_Jenny-1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center top;
+} 
 .page__lanquage_heb {
 	direction: rtl;
 }
@@ -33,6 +38,11 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 
 /* HEADER */
@@ -116,15 +126,14 @@ img {
 
 
 /* Предложение курса */
-.text {
-	transition: all 0.2s ease-out;
-}
+
 .propose {
-	background: #D9D9D9;
+	background: rgba(193, 155, 97, 0.83);;
 }
 .propose__wrapper {
+	flex-direction: column;
 	min-height: 571px;
-	border-top: 1px solid transparent;
+	margin-top: 18px;
 }
 .propose__text_1 {
 	font-size: 38px;
@@ -161,12 +170,19 @@ img {
 	font-style: normal;
 	color: #000;
 }
-.propose__wrapper button {
-	width: 418px;
+.propose__buttons {
+	width: 100%;
 	height: 57px;
 	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.propose__buttons button {
+	width: 418px;
+	height: 57px;
 	border-radius: 29px;
-	background: #ffd84f;
+	background: linear-gradient(88.35deg, #E9A936 2.33%, #FFE499 23.08%, #E09C28 49.21%, #F5CC73 91.33%, #FFE397 98.77%);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
 	font-size: 30px;
 	line-height: 37px;
@@ -174,8 +190,35 @@ img {
 	color: #000;
 	cursor: pointer;
 }
-.propose__wrapper button:hover {
+.propose__buttons button:hover {
 	text-decoration: underline;
+}
+.propose__whatsapp {
+	width: 55px;
+	background: #000;
+	border-radius: 50%;
+}
+
+/* COURS */
+.cours {
+	background: rgba(0, 0, 0, 0.74);
+}
+.cours__wrapper {
+	min-height: 365px;
+	margin: 55px auto;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.cours__text {
+	display: inline-block;
+	width: 1036px;
+	padding: 0 38px;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	color: #E6C492;
+	text-align: center;
 }
 
 
