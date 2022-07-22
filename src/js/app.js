@@ -2,6 +2,8 @@
 const select = document.querySelector('select');
 const allLang = ['ru', 'he'];
 
+let page = document.querySelector('.page');
+
 select.addEventListener('change', changeURLLanguage);
 
 function changeURLLanguage() {
@@ -26,6 +28,19 @@ function changeLanguage() {
 		if (elem) {
 			elem.innerHTML = langArr[key][hash];
 		}
+	}
+
+	// change dir
+	let lang = select.value;
+	
+	if (lang === "ru") {
+		console.log('кнопка нажата');
+		page.classList.remove('page__lanquage_he');
+		page.classList.add('page__lanquage_ru');
+	} else {
+		console.log('кнопка нажата');
+		page.classList.remove('page__lanquage_ru');
+		page.classList.add('page__lanquage_he');
 	}
 }
 

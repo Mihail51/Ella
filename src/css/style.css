@@ -246,7 +246,25 @@ img {
 	color: #E6C492;
 	text-align: center;
 }
-
+.reward {
+	background: linear-gradient(274.61deg, #E6C492 11.13%, rgba(255, 242, 223, 0.95) 60.98%);
+}
+.reward__wrapper {
+	min-height: 326px;
+	justify-content: space-around;
+	align-items: center;
+}
+.reward__text {
+	width: 693px;
+	height: 99px;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #000;
+}
+/* ABOUT */
 .about {
 	background: linear-gradient(180deg, rgba(193, 155, 97, 0.88) 0%, #E6C492 32.81%, #D8B989 52.08%, #000000 100%);
 }
@@ -428,6 +446,37 @@ img {
 	font-weight: 700;
 	line-height: 30px;
 	color: #e6c492;
+}
+.invitation {
+	background: rgba(0, 0, 0, 0.6);
+}
+.invitation__wrapper {
+	position: relative;
+	min-height: 272px;
+	justify-content: flex-start;
+	align-items: center;
+}
+.invitation__text {
+	display: inline-block;
+	width: 1056px;
+	height: 160px;
+	padding: 0 53px;
+	box-sizing: border-box;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+	color: #E6C492;
+}
+.invitation__image {
+	position: absolute;
+	width: 49px;
+	height: auto;
+	transform: rotate(-33.59deg);
+	top: -40px;
+}
+.invitation__text span {
+	display: block;
 }
 
 
