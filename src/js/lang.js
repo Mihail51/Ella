@@ -21,8 +21,8 @@ const langArr = {
 	},
 
 	"header-menu_3" : {
-		"ru" : "Контакты",
-		"he" : "אנשי קשר ",
+		"ru" : "Пакеты",
+		"he" : "חבילות ",
 	},
 
 	"propose__text_1" : {

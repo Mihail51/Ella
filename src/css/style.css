@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+
+html {
+	scroll-behavior: smooth;
+}
 .page {
 	position: relative;
 	margin: 0 auto;
@@ -9,6 +13,7 @@
 	background-size: cover;
 	background-position: center top;
 	font-family: 'Montserrat', sans-serif;
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -150,6 +155,23 @@ img {
 	top: 0;
 }
 
+/* Language menu */
+.change-lang {
+	width: 50px;
+	height: 31px;
+	border-radius: 14px;
+	background: linear-gradient(90deg, #272727 0%, rgba(79, 78, 78, 0) 109%);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	appearance: none;
+	text-align: center;
+	color: #e6c492;
+	border: none;
+}
+
 
 /* Предложение курса */
 
@@ -189,7 +211,7 @@ img {
 	margin: 0;
 }
 .propose__text_4 {
-	max-width: 451px;
+	max-width: 475px;
 	font-size: 26px;
 	font-weight: 400;
 	line-height: 38px;
@@ -218,6 +240,12 @@ img {
 }
 .propose__buttons button:hover {
 	text-decoration: underline;
+}
+.whatsapp__link {
+	position: fixed;
+	right: 100px;
+	bottom: 150px;
+	z-index: 100;
 }
 .propose__whatsapp {
 	width: 55px;
@@ -1267,13 +1295,139 @@ only screen and (min-resolution: 144dpi) {
 	margin: 20px auto;
 }
 .ask__term {
-	font-weight: 700;
+	font-weight: 700; 
 }
 .ask__description {
 	font-weight: 400;
 }
- 
 
+/* INVIT */
+.invit {
+	background: rgba(0, 0, 0, 0.6);
+}
+.invit__wrapper {
+	min-height: 251px;
+	margin: 55px auto;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.invit__image {
+	left: 50%;
+	transform: rotate(-33.59deg) translate(-144px, -100px);
+	top: -100px;
+}
+.invit__heading {
+	margin-bottom: -10px;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #e6c492;
+}
+.invit__text {
+	max-width: 1091px;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 34px;
+	text-align: center;
+	color: #e6c492;
+}
+ 
+ /* CHANCE */
+.chance{
+	background: linear-gradient(90deg, #000000 -7.91%, #01692A 52.75%, #000000 111.46%);
+}
+.chance__wrapper {
+	min-height: 253px;
+	margin: 55px auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.chance__heading {
+	margin-bottom: -30px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 56px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.chance__text {
+	width: 1130px;
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.button-packs__conteiner {
+	width: 1265px;
+}
+.button-packs__wrapper {
+	margin: 55px auto;
+	justify-content: space-between;
+	align-items: center;
+}
+.button-pack {
+	width: 605px;
+	height: 368px;
+	border-radius: 61px;
+	color: #fff;
+}
+.button-pack_1 {
+	background: linear-gradient(180deg, rgba(1, 105, 42, 0.95) 0%, rgba(0, 0, 0, 0.855) 100%);
+}
+.button-pack_2 {
+	background: linear-gradient(180deg, rgba(7, 198, 82, 0.95) 0%, rgba(0, 0, 0, 0.855) 100%);
+}
+.button-pack button {
+	display: block;
+	width: 418px;
+	height: 57px;
+	margin: 58px auto;
+	border-radius: 29px;
+	background: linear-gradient(88.35deg, #E9A936 2.33%, #FFE499 23.08%, #E09C28 49.21%, #F5CC73 91.33%, #FFE397 98.77%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.join {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url();
+}
+.join__wrapper {
+	min-height: 252px;
+	margin: 55px auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.join__heading {
+	margin-bottom: -10px;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.join__text {
+	width: 870px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 34px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: #fff;
+}
 
 
 

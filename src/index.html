@@ -24,15 +24,17 @@
 				<!-- MENU -->
 				<nav class="nav header__nav">
 					<ul class="menu header__menu">
-						<li class="item menu__item header__menu__item_1"><a class="lng__header-menu_1" href="#">Обо мне</a></li>
-						<li class="item menu__item header__menu__item_2"><a class="lng__header-menu_2" href="#">О курсе</a></li>
-						<li class="item menu__item header__menu__item_3"><a class="lng__header-menu_3" href="#">Контакты</a></li>
+						<li class="item menu__item header__menu__item_1"><a class="lng__header-menu_1" href="#about">Обо мне</a></li>
+						<li class="item menu__item header__menu__item_2"><a class="lng__header-menu_2" href="#review">О курсе</a></li>
+						<li class="item menu__item header__menu__item_3"><a class="lng__header-menu_3" href="#packages">Пакеты</a></li>
+						<li class="item menu__item header__menu__item_4"><a class="lng__header-menu_4" href="#faq">Вопросы</a></li>
+						<li class="item menu__item header__menu__item_5"><a class="lng__header-menu_5" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				<!-- Language menu -->
 				<select name="change-lang" id="change-lang" class="change-lang">
 					<option class="lanquage__button lanquage__button_ru lanquage__button_ru" value="ru">Ru</option>
-					<option class="lanquage__button lanquage__button_heb lanquage__button_he" value="he">He</option>
+					<option class="lanquage__button lanquage__button_heb lanquage__button_he" value="he">Heb</option>
 				</select>
 			</div>
 		</div>
@@ -56,7 +58,7 @@
 					</div>
 					<div class="buttones propose__buttons">
 						<button onclick="window.location.href = '#';" class="lng__butt">Перейти к курсу</button>
-						<a title="WhatsApp" href="#"><img class="whatsapp propose__whatsapp" src="images/whatsapp (2) 1.svg" alt="WhatsApp"></a>
+						<a class="link whatsapp__link" title="WhatsApp" href="#"><img class="whatsapp propose__whatsapp" src="images/whatsapp (2) 1.svg" alt="WhatsApp"></a>
 					</div>
 				</div>
 			</div>
@@ -71,7 +73,7 @@
 			</div>
 		</section>
 		<!-- REWARD -->
-		<section class="reward">
+<!--		<section class="reward">
 			<div class="conteiner reward__conteiner">
 				<div class="wrapper reward__wrapper">
 					<picture class="image reward__image">
@@ -81,9 +83,9 @@
 					<p class="text reward__text lng__reward__text">Y-Brows был награжден как “Самая&nbsp;популярная техника&nbsp;в&nbsp;мире” на&nbsp;всемирном фестивале бровей INNOVA</p>
 				</div>
 			</div>
-		</section>
+		</section>   -->
 		<!-- ABOUT -->
-		<section class="about">
+		<section class="about" id="about">
 			<div class="conteiner about__conteiner">
 				<div class="wrapper about__wrapper">
 					<div class="content about__content">
@@ -129,11 +131,7 @@
 							<sourse type="image/webp" srcset="images/bg_improve.webp 1x, images/bg_improve@2.webp 2x"></sourse>
 							<img width="354" height="246" srcset="images/bg_improve@2.png" src="images/bg_improve.png" alt="">
 						</picture>
-<!--						<picture class="image improve__image improve__image_2">
-							<sourse type="image/webp" srcset="images/Рис-3_1.webp 1x, images/Рис-3_1@2.webp"></sourse>
-							<img width="404" height="396" srcset="images/Рис-3_1@2.png" src="images/Рис-3_1.png" alt="">
-						</picture>   -->
-					</div> 
+    				</div> 
 				</div>
 			</div>
 		</section>
@@ -203,7 +201,7 @@
 			</div>
 		</section>
 		<!-- REVIEW -->
-		<section class="review">
+		<section class="review" id="review">
 			<div class="wrapper review__wrapper">
 				<div class="heading review__heading">
 					<div class="conteiner review__heading__conteiner">
@@ -363,7 +361,7 @@
 			</div>
 		</section>
 		<!-- PACKAGES -->
-		<section class="packages">
+		<section class="packages" id="packages">
 			<div class="title package__title conteiner">
 				<h2 class="heading packages__heading lng__packages__heading">ПАКЕТЫ <span>Y-BROWS</span><span>ВЫБЕРИТЕ ОПТИМАЛЬНЫЙ ДЛЯ ВАС</span></h2>
 			</div>
@@ -496,6 +494,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- QUARANTEE -->
 		<section class="guarantee">
 			<div class="conteiner guarantee__conteiner">
 				<div class="wrapper guarantee__wrapper">
@@ -520,7 +519,7 @@
 			</div>
 		</section>
 		<!-- FAQ -->
-		<section class="faq">
+		<section class="faq" id="faq">
 			<div class="conteiner faq__conteiner">
 				<div class="wrapper faq__wrapper">
 					<h2 class="heading faq__heading">FAQ</h2>
@@ -600,6 +599,53 @@
 							<dd class="description ask__description lng__ask__description_3">... помогут вам занять достойное место среди конкурентов и значительно увеличит ваш доход?</dd>
 						</div>
 					</dl>
+				</div>
+			</div>
+		</section>
+		<!-- INVIT -->
+		<section class="invit">
+			<div class="conteiner invit__conteiner">
+				<div class="wrapper invit__wrapper">
+					<picture class="image invitation__image invit__image">
+						<source type="image/webp" srcset="images/drawing-pen.webp 1x, images/drawing-pen@2.webp 2x">
+						<img width="49" height="196" srcset="images/drawing-pen@2.png" src="images/drawing-pen.png" alt="">
+					</picture>
+					<h2 class="heading invit__heading lng__invit__heading">ЕСЛИ ТАК, </h2>
+					<p class="text invit__text lng__invit__text">Скорее присоединяйтесь ко мне и к команде влюбленных в свою работу мастеров перманентного макияжа, учитесь вместе с нами и становитесь настоящим творцом собственных шедевров!</p>
+				</div>
+			</div>
+		</section>
+		<!-- CHANCE -->
+		<section class="chance">
+			<div class="conteiner chance__conteiner">
+				<div class="wrapper chance__wrapper">
+					<h2 class="heading chance__heading lng__chance__heading">не упустите свой шанс</h2>
+					<p class="text chance__text lng__chance__text">повысить уровень профессионализма и масштабировать свой бизнес!</p>
+				</div>
+			</div>
+		</section>
+		<section class="button-packs">
+			<div class="conteiner button-packs__conteiner">
+				<div class="wrapper button-packs__wrapper">
+					<div class="button-pack button-pack_1">
+						<h3 class="caption package__caption button-pack__caption">ПАКЕТ №1</h3>
+						<p class="price package__price button-pack__price">2888</p>
+						<button onclick="window.location.href = '#';" class="lng__butt__packages__package_1">Купить</button>
+					</div>
+					<div class="button-pack button-pack_2">
+						<h3 class="caption package__caption button-pack__caption">ПАКЕТ №2</h3>
+						<p class="price package__price button-pack__price">6876</p>
+						<button onclick="window.location.href = '#';" class="lng__butt__packages__package_2">Купить</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- JOIN -->
+		<section class="join">
+			<div class="conteiner join__conteiner">
+				<div class="wrapper join__wrapper">
+					<h2 class="heading join__heading lng__join__heading">Присоединяйтесь</h2>
+					<p class="text join__text lng__join__text">и получите доступ на целый год прямо сейчас</p>
 				</div>
 			</div>
 		</section>
