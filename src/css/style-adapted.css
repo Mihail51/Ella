@@ -7,10 +7,28 @@
 	.conteiner {
 		width: 720px;
 	}
+	.header__menu {
+		width: 465px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.menu__item {
+		margin: 0 10px;
+	}
 }
 @media (max-width: 768px) {
 	.conteiner {
 		width: 540px;
+	}
+	.whatsapp__link {
+		right: 50px;
+		bottom: 50px;
+	}
+	.header__logo {
+		width: 44px;
+		height: 44px;
 	}
 	.header__nav {
 		position: fixed;
@@ -21,8 +39,16 @@
 		overflow: hidden;
 		background: #000;
 		z-index: 1;
-/*		max-height: 0;  */
 		transition: all .2s ease-out;
+	}
+	.header__menu {
+		display: block;
+		width: 100%;
+		margin: auto;
+
+	}
+	.hamb {
+		margin: 0 50px;
 	}
 	.hamb-line, 
 	.hamb-line::before, 
@@ -38,6 +64,86 @@
 @media (max-width: 576px) {
 	.conteiner {
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 27px;
+	}
+	.header__wrapper {
+		height: 61px;
+	}
+	.header__logo {
+		width: 33px;
+		height: 33px;
+		left: 27px;
+	}
+	.hamb {
+		margin: 0 24px;
+	}
+	.main__languages {
+		width: 41px;
+		height: 27px;
+		border-radius: 12px;
+	}
+	.change-lang {
+		width: 37px;
+		height: 28px;
+		border-radius: 10px;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	/* Предложение курса */
+	.propose__wrapper {
+		min-height: 461px;
+	}
+	.propose__text_1 {
+		font-size: 19px;
+		font-weight: 682;
+		line-height: 23px;
+		margin-top: 43px;
+	}
+	.propose__text_2 {
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 23px;
+	}
+	.propose__text_3 {
+		font-size: 21px;
+		line-height: 28px;
+		margin: 30px 0;
+	}
+	.propose__text_4 {
+		font-size: 13.5px;
+		font-weight: 500;
+		line-height: 16px;
+	}
+	.propose__text_4 span {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.propose__buttons button {
+		width: 271.33px;
+		height: 37px;
+		font-size: 15px;
+		line-height: 18px;
+		margin-top: 80px;
+	}
+	.propose__whatsapp {
+		width: 48px;
+		height: 48px;
+	}
+	.whatsapp__link {
+		right: 25px;
+	}
+
+	/* COURS */
+	.cours__wrapper {
+		min-height: 341px;
+		margin: 27px auto;
+	}
+	.cours__text {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0;
+	}
+	.cours__text_1 {
+		text-transform: capitalize;
 	}
 }
