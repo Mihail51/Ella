@@ -281,8 +281,14 @@ img {
 .cours__wrapper {
 	min-height: 365px;
 	margin: 55px auto;
+	padding: 37px 0;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 .cours__text {
 	display: inline-block;
@@ -315,12 +321,13 @@ img {
 }
 /* ABOUT */
 .about {
+	position: relative;
 	background: linear-gradient(180deg, rgba(193, 155, 97, 0.88) 0%, #E6C492 32.81%, #D8B989 52.08%, #000000 100%);
 }
 .about__wrapper {
 	min-height: 592px;
 	margin: 55px auto;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .about__content {
@@ -331,6 +338,7 @@ img {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 1;
 }
 .about__logo {
 	width: 218px;
@@ -358,10 +366,37 @@ img {
 	color: #e6c492;
 }
 .about__foto {
+	position: absolute;
 	width: 527px;
-	height: 100%;
-	margin-right: -100px;
-	align-self: end;
+	height: 533px;
+	top: 59px;
+	right: 14px;
+	background: url(../images/Ella-2.webp) no-repeat top center;
+	background-size: cover;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+	.page {
+		background-image: url(../images/Ella-2@2.webp);
+		background-size: cover;
+	}
+}
+.no-webp .page {
+	background-image: url(../images/Ella-2.png);
+	background-size: cover;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+	.no-webp .page {
+		background-image: url(../images/Ella-2@2.png);
+		background-size: cover;
+	}
 }
 
 /* IF */

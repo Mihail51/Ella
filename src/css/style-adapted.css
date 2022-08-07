@@ -17,6 +17,21 @@
 	.menu__item {
 		margin: 0 10px;
 	}
+	.about__wrapper {
+		min-height: 540px;
+	}
+	.about__content {
+		width: 540px;
+	}
+	.about__logo {
+		width: 170px;
+	}
+	.about__foto {
+		width: 385px;
+		height: 385px;
+		top: auto;
+		bottom: 0;
+	}
 }
 @media (max-width: 768px) {
 	.conteiner {
@@ -60,6 +75,45 @@
 		margin: 20px 0;
 		text-align: center;
 	}
+	.propose__description {
+		width: 420px;
+	}
+	.propose__text_1 {
+		font-size: 30px;
+		line-height: 40px;
+		margin-top: 50px;
+	}
+	.propose__text_2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.propose__text_3 {
+		font-size: 36px;
+		line-height: 45px;
+	}
+	.propose__text_4 {
+		font-size: 23px;
+		line-height: 35px;
+	}
+	.propose__buttons button {
+		font-size: 25px;
+	}
+	.about__wrapper {
+ 		 min-height: 440px;
+	}
+	.about__content {
+		width: 360px;
+	}
+	.about__logo {
+		width: 160px;
+	}
+	.about__inner {
+		height: 100%;
+		margin-top: 25px;
+	}
+	.about__text {
+		margin: 10px 0;
+	}
 }
 @media (max-width: 576px) {
 	.conteiner {
@@ -92,6 +146,9 @@
 	/* Предложение курса */
 	.propose__wrapper {
 		min-height: 461px;
+	}
+	.propose__description {
+		max-width: 280px;
 	}
 	.propose__text_1 {
 		font-size: 19px;
@@ -135,8 +192,9 @@
 
 	/* COURS */
 	.cours__wrapper {
-		min-height: 341px;
+		min-height: 200px;
 		margin: 27px auto;
+		padding: 22px 0;
 	}
 	.cours__text {
 		font-size: 14px;
@@ -146,4 +204,65 @@
 	.cours__text_1 {
 		text-transform: capitalize;
 	}
-}
+	.about {
+		background: linear-gradient(180deg, rgba(193, 155, 97, 0.88) 0%, #E6C492 32.81%, #D8B989 66.67%, #000000 100%);
+	}
+	.about__foto {
+		width: 160px;
+		height: 216px;
+		top: 18px;
+		right: 0;
+		background: url(../images/Ella_1.webp) no-repeat center center;
+		background-size: cover;
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-resolution: 1.5dppx),
+	only screen and (min-resolution: 144dpi) {
+		.page {
+			background-image: url(../images/Ella_1@2.webp) no-repeat center center;
+			background-size: cover;
+		}
+	}
+	.no-webp .page {
+		background-image: url(../images/Ella_1.png) no-repeat center center;
+		background-size: cover;
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-resolution: 1.5dppx),
+	only screen and (min-resolution: 144dpi) {
+		.no-webp .page {
+			background-image: url(../images/Ella_1@2.png) no-repeat center center;
+			background-size: cover;
+		}
+	}
+	.about__gradient {
+		position: absolute;
+		height: 141px;
+		right: 0;
+		left: 0;
+		top: 93px;
+		background: linear-gradient(360deg, #E3C18E 12.06%, rgba(230, 196, 146, 0.83) 60.46%, rgba(230, 196, 146, 0) 91.49%);
+	}
+	.about__wrapper {
+		min-height: 544px;
+	}
+	.about__content {
+		width: 100%;
+	}
+	.about__logo {
+		width: 143px;
+		align-self: flex-start;
+		margin-left: calc(50vw - 160px);
+	}
+	.about__text {
+		font-size: 3.75vw;
+		line-height: 117%;
+	}
+	.about__text_1 span {
+		display: block;
+	}
+
