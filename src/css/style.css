@@ -412,8 +412,9 @@ only screen and (min-resolution: 144dpi) {
 }
 .if__heading {
 	display: inline-block;
-	width: 935px;
+	max-width: 935px;
 	padding: 0 26px;
+	margin-bottom: 0;
 	box-sizing: border-box;
 	font-size: 36px;
 	font-weight: 800;
@@ -423,6 +424,8 @@ only screen and (min-resolution: 144dpi) {
 }
 .if__items {
 	list-style: none;
+	margin-top: 0;
+	padding: 0;
 }
 .if__item {
 	margin: 22px 0;
@@ -433,8 +436,8 @@ only screen and (min-resolution: 144dpi) {
 	background-position: left center;
 }
 .if__item span {
-	width: 1121px;
-	height: 58px;
+	max-width: 1087px;
+	min-height: 58px;
 	border-radius: 29px;
 	padding: 0 50px;
 	box-sizing: border-box;
@@ -442,9 +445,9 @@ only screen and (min-resolution: 144dpi) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 600;
-	line-height: 24px;
+	line-height: 18px;
 	color: #000;
 	text-align: center;
 }

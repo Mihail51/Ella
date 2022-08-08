@@ -114,6 +114,14 @@
 	.about__text {
 		margin: 10px 0;
 	}
+	.if__item {
+		padding-left: 0;
+		padding-top: 50px;
+		background-position: top center;
+	}
+	.if__item span {
+		padding: 10px 50px;
+	}
 }
 @media (max-width: 576px) {
 	.conteiner {
@@ -145,42 +153,42 @@
 	}
 	/* Предложение курса */
 	.propose__wrapper {
-		min-height: 461px;
+		min-height: 144.06vw;
 	}
 	.propose__description {
-		max-width: 280px;
+		width: 87.5vw;
 	}
 	.propose__text_1 {
-		font-size: 19px;
+		font-size: 5.94vw;
 		font-weight: 682;
-		line-height: 23px;
-		margin-top: 43px;
+		line-height: 7.19vw;
+		margin-top: 13.44vw;
 	}
 	.propose__text_2 {
-		font-size: 19px;
+		font-size: 5.94vw;
 		font-weight: 500;
-		line-height: 23px;
+		line-height: 7.19vw;
 	}
 	.propose__text_3 {
-		font-size: 21px;
-		line-height: 28px;
-		margin: 30px 0;
+		font-size: 6.56vw;
+		line-height: 8.75vw;
+		margin: 9.38vw 0;
 	}
 	.propose__text_4 {
-		font-size: 13.5px;
+		font-size: 4.22vw;
 		font-weight: 500;
-		line-height: 16px;
+		line-height: 5vw;
 	}
 	.propose__text_4 span {
-		font-size: 16px;
-		line-height: 30px;
+		font-size: 5vw;
+		line-height: 9.38vw;
 	}
 	.propose__buttons button {
-		width: 271.33px;
-		height: 37px;
-		font-size: 15px;
-		line-height: 18px;
-		margin-top: 80px;
+		width: 84.79vw;
+		height: 11.56vw;
+		font-size: 4.69vw;
+		line-height: 5.63vw;
+		margin-top: 25vw;
 	}
 	.propose__whatsapp {
 		width: 48px;
@@ -265,4 +273,17 @@
 	.about__text_1 span {
 		display: block;
 	}
-
+	.if__heading {
+		font-size: 4.375vw;
+		line-height: 6.25vw;
+		padding: 0;
+	}
+	.if__heading span {
+		display: block;
+	}
+	.if__item span {
+		font-size: 3.75vw;
+		line-height: 5vw;
+		padding: 25px 20px;
+	}
+}
