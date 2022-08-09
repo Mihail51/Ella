@@ -463,8 +463,8 @@ only screen and (min-resolution: 144dpi) {
 	align-items: center;
 }
 .improve__content {
-	width: 1166px;
-	height: 233px;
+	max-width: 1166px;
+	min-height: 233px;
 	margin-top: 30px;
 	padding: 0 32px;
 	text-align: center;
@@ -487,10 +487,10 @@ only screen and (min-resolution: 144dpi) {
 	display: flex;
 	justify-content: center;
 	margin-bottom: -150px;
-}  /*
+}  
 .improve__image {
-	margin: 0 30px;
-}  */
+	width: 354px;
+}  
 
 /* ANSWER */
 .answer {
