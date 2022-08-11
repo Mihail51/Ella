@@ -491,7 +491,7 @@ only screen and (min-resolution: 144dpi) {
 .improve__image {
 	width: 354px;
 }
-  
+
 
 /* ANSWER */
 .answer {
@@ -556,24 +556,24 @@ only screen and (min-resolution: 144dpi) {
 }
 .invitation {
 	background: rgba(0, 0, 0, 0.6);
-	margin: 55px auto;
 }
 .invitation__wrapper {
 	position: relative;
 	min-height: 272px;
+	margin: 55px auto;
 	justify-content: flex-start;
 	align-items: center;
 }
 .invitation__text {
 	display: inline-block;
-	width: 1056px;
-	height: 160px;
-	padding: 0 53px;
+	max-width: 1056px;
+	min-height: 160px;
 	box-sizing: border-box;
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 40px;
 	text-align: center;
+	text-transform: uppercase;
 	color: #E6C492;
 }
 .invitation__image {
@@ -582,8 +582,9 @@ only screen and (min-resolution: 144dpi) {
 	height: auto;
 	transform: rotate(-33.59deg);
 	top: -40px;
+	left: -60px;
 }
-.invitation__text span {
+.invitation__text .big {
 	display: block;
 }
 

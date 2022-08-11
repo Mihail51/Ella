@@ -356,4 +356,26 @@
 		height: 22.5vw;
 		left: -43vw;
 	}
+	.invitation__wrapper {
+		min-height: 230px;
+		margin: 0;
+		padding: 6.94vw 0;
+	}
+	.invitation__text {
+		padding: 0;
+		font-size: 3.75vw;
+		line-height: 6.25vw;
+	}
+	.invitation__text .small {
+		display: block;
+	}
+	.invitation__text .big {
+		display: inline-block;
+	}
+	.invitation__image {
+		width: 7.81vw;
+		left: 50%;
+		transform: rotate(-33.59deg) translateX(-50%);
+		top: -21.875vw;
+	}
 }
