@@ -490,7 +490,8 @@ only screen and (min-resolution: 144dpi) {
 }  
 .improve__image {
 	width: 354px;
-}  
+}
+  
 
 /* ANSWER */
 .answer {
@@ -520,8 +521,8 @@ only screen and (min-resolution: 144dpi) {
 	
 }
 .answer__content {
-	width: 1166px;
-	height: 501px;
+	max-width: 1166px;
+	min-height: 501px;
 	margin-bottom: 35px;
 	display: flex;
 	flex-direction: column;
