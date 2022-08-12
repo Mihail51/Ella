@@ -8,6 +8,11 @@
 	.improve__image {
 		width: 311px;
 	}
+	.get__line {
+		height: 1365px;
+		left: calc(50% - 466px);
+		top: 152px;
+	}
 }
 @media (max-width: 992px) {
 	.conteiner {
@@ -43,6 +48,11 @@
 	}
 	.improve__image {
 		width: 257px;
+	}
+	.get__line {
+		height: 1590px;
+		left: calc(50% - 345px);
+		top: 155px;
 	}
 }
 @media (max-width: 768px) {
@@ -139,6 +149,11 @@
 	}
 	.improve__images {
 		margin-bottom: -84px;
+	}
+	.get__line {
+		height: 1910px;
+		left: calc(50% - 256px);
+		top: 172px;
 	}
 }
 @media (max-width: 576px) {
@@ -246,12 +261,12 @@
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
-		.page {
+		.about__foto {
 			background-image: url(../images/Ella_1@2.webp) no-repeat center center;
 			background-size: cover;
 		}
 	}
-	.no-webp .page {
+	.no-webp .about__foto {
 		background-image: url(../images/Ella_1.png) no-repeat center center;
 		background-size: cover;
 	}
@@ -260,7 +275,7 @@
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
-		.no-webp .page {
+		.no-webp .about__foto {
 			background-image: url(../images/Ella_1@2.png) no-repeat center center;
 			background-size: cover;
 		}
@@ -377,5 +392,41 @@
 		left: 50%;
 		transform: rotate(-33.59deg) translateX(-50%);
 		top: -21.875vw;
+	}
+	.get__wrapper {
+		margin: 5.94vw auto;
+	}
+	.get__heading__conteiner {
+		height: 25.625vw;
+	}
+	.get__heading__conteiner h2 {
+		font-size: 5vw;
+		line-height: 6.25vw;
+	}
+	.get__line {
+		width: 0.625vw;
+		height: 321.875vw;
+		left: calc(50% - 16.875vw - (74.6875vw/2) + 9.375vw + 1.875vw);
+		top: calc(5.94vw + 7.19vw + 6.25vw + 2.5vw);
+	}
+	.get__content {
+		width: 74.69vw;
+		padding: 7.19vw 0;
+		margin-left: 16.875vw!important;
+		margin: 5.94vw auto;
+	}
+	.get__caption {
+		width: 70.625vw;
+		font-size: 4.375vw;
+		line-height: 6.25vw;
+	}
+	.get__caption::before {
+		width: 2.5vw;
+		height: 2.5vw;
+		left: -9.375vw;
+	}
+	.get__text {
+		font-size: 4.06vw;
+		line-height: 5.625vw;
 	}
 }
