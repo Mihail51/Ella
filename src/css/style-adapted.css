@@ -13,6 +13,20 @@
 		left: calc(50% - 466px);
 		top: 152px;
 	}
+	.lng__review__text_1 {
+		max-width: 610px;
+		z-index: 1;
+	}
+	.lng__review__text_2 {
+		max-width: 557px;
+		z-index: 1;
+	}
+	.review__includes__item {
+		margin: 20px 30px;
+	}
+	figure {
+		height: 150px;
+	}
 }
 @media (max-width: 992px) {
 	.conteiner {
@@ -53,6 +67,17 @@
 		height: 1590px;
 		left: calc(50% - 345px);
 		top: 155px;
+	}
+	.review__tablet {
+		width: 450px;
+		top: -15px;
+		left: -40px;
+	}
+	.lng__review__text_1 {
+		width: 445px;
+	}
+	.review__text .text2 {
+		display: block;
 	}
 }
 @media (max-width: 768px) {
@@ -154,6 +179,16 @@
 		height: 1910px;
 		left: calc(50% - 256px);
 		top: 172px;
+	}
+	.review__heading__conteiner h2 {
+		font-size: 40px;
+	}
+	.review__tablet {
+		width: 500px;
+		top: 0;
+	}
+	.review__text {
+		color: #fff;
 	}
 }
 @media (max-width: 576px) {
@@ -428,5 +463,82 @@
 	.get__text {
 		font-size: 4.06vw;
 		line-height: 5.625vw;
+	}
+	.review__heading__conteiner {
+		height: 17.5vw;
+	}
+	.review__heading__conteiner h2 {
+		font-size: 4.375vw;
+		line-height: 6.25vw;
+	}
+	.review__heading__conteiner h2 span {
+		display: block;
+		text-align: center;
+	}
+	.review__items {
+		margin-top: 0;
+	}
+	.review__item {
+		margin: 5.94vw auto;
+	}
+	.review__item_1 {
+		min-height: 221px;
+		margin-top: 0;
+	}
+	.review__item_1 .review__content {
+		padding: 0 20px;
+	}
+	.review__tablet {
+		width: 49.375vw;
+		height: 38.75vw;
+		top: -1.875vw;
+		left: 1.563vw;
+	}
+	.review__text {
+		width: 100%;
+		font-size: 3.75vw;
+		line-height: 5vw;
+		box-sizing: border-box;
+		color: #000;
+	}
+	.lng__review__text_1 {
+		padding-left: 37.5vw;
+	}
+	.lng__review__text_1 span {
+		line-height: 5vw;
+	}
+	.review__text .text2 {
+		display: inline;
+	}
+	.review__subject {
+		margin-top: 3.125vw;
+		margin-bottom: 0;
+		font-size: 5.31vw;
+		line-height: 12, 5vw;
+	}
+	.review__includes__items {
+		justify-content: center;
+	}
+	.review__includes__item {
+		width: 100%;
+		margin: 19px auto;
+	}
+	figure {
+		width: 100%;
+		height: auto;
+	}
+	figure img {
+		width: 17.19vw;
+	}
+	figcaption {
+		position: relative;
+		height: 8.44vw;
+	}
+	figcaption p {
+		font-size: 3.75vw;
+		line-height: 7.5vw;
+	}
+	figcaption p span {
+		display: inline;
 	}
 }

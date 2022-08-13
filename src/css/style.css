@@ -727,6 +727,12 @@ only screen and (min-resolution: 144dpi) {
 	justify-content: flex-end;
 	align-items: center;
 }
+.review__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
 .review__tablet {
 	position: absolute;
 	left: -47px;
@@ -760,8 +766,11 @@ only screen and (min-resolution: 144dpi) {
 	align-items: center;
 	flex-wrap: wrap;
 	list-style: none;
+	padding: 0;
 }
 .review__subject {
+	margin-top: 55px;
+	margin-bottom: 58px;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 40px;
@@ -782,6 +791,17 @@ figcaption {
 	width: 100%;
 	height: 52px;
 	bottom: 0;
+}
+figcaption p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+figcaption p span {
+	display: block;
 }
 
 /* STRUCTURE */
