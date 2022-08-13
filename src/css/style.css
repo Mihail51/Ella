@@ -836,6 +836,9 @@ figcaption p span {
 	min-height: 471px;
 	background: rgba(230, 196, 146, 0.8);
 }
+.structure__modul {
+	width: 83.45vw;
+}
 .structure__modul h3 {
 	position: absolute;
 	font-size: 46px;
@@ -848,7 +851,9 @@ figcaption p span {
 	margin: 0;
 	top: 75%;
 	left: -155px;
-	text-decoration: underline;
+	text-decoration: underline;  
+	text-decoration-thickness: 4px;
+	text-underline-offset: 34px;
 }
 .title__modul, .title__result__modul {
 	font-size: 30px;
@@ -864,7 +869,7 @@ figcaption p span {
 	letter-spacing: 0.1em;
 }
 .structure__modul__content {
-	max-width: 987px;
+	max-width: 72.25vw;
 	height: 100%;
 	margin: 50px auto;
 }

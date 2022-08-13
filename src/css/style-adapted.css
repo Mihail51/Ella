@@ -27,6 +27,9 @@
 	figure {
 		height: 150px;
 	}
+	.structure__modul {
+		width: 83.45vw;
+	}
 }
 @media (max-width: 992px) {
 	.conteiner {
@@ -78,6 +81,22 @@
 	}
 	.review__text .text2 {
 		display: block;
+	}
+	.structure__heading__conteiner {
+		width: 83.45vw!important;
+		height: auto;
+	}
+	.structure__heading__conteiner h2 {
+		font-size: 47px;
+		line-height: 36px;
+	}
+	.structure__heading__conteiner h2 span {
+		display: block;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.structure__modul {
+		width: 83.45vw;
 	}
 }
 @media (max-width: 768px) {
@@ -189,6 +208,9 @@
 	}
 	.review__text {
 		color: #fff;
+	}
+	.structure__modul {
+		width: 80.45vw;
 	}
 }
 @media (max-width: 576px) {
@@ -540,5 +562,53 @@
 	}
 	figcaption p span {
 		display: inline;
+	}
+	.structure__heading__conteiner {
+		height: 19.69vw;
+	}
+	.structure__heading__conteiner h2 {
+		font-size: 5vw;
+		line-height: 5.625vw;
+	}
+	.structure__heading__conteiner h2 span {
+		margin-top: 0;
+	}
+	.structure__modul {
+		padding: 0;
+	}
+	.structure__modul h3 {
+		position: relative;
+		width: 100%;
+		font-size: 6.25vw;
+		line-height: 12.5vw;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		text-align: center;
+		text-decoration: none;
+		border-bottom: 4px solid #fff;
+	}
+	.structure__modul__content {
+		padding: 0 8.44vw;
+	}
+	.title__modul, .title__result__modul {
+		font-size: 4.375vw;
+		line-height: 7.5vw;
+	}
+	.description__modul, .result__modul {
+		font-size: 4.375vw;
+		line-height: 5.625vw;
+	}
+	.description__modul__items, .description__modul__item {
+		font-size: 4.375vw;
+		line-height: 5vw;
+		padding: 0;
+		margin-left: 0;
+	}
+	.description__modul__items {
+		list-style-position: inside;
+	}
+	.structure__item_1 {
+		margin-top: 0;
 	}
 }
