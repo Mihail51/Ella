@@ -611,4 +611,14 @@
 	.structure__item_1 {
 		margin-top: 0;
 	}
+	.goal__wrapper {
+		min-height: 50.31vw;
+		margin: 5.94vw auto;
+	}
+	.goal__text {
+		width: 84.06vw;
+		margin: 9.38vw auto;
+		font-size: 4.375vw;
+		line-height: 5.625vw;
+	}
 }
