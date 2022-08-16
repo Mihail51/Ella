@@ -1225,6 +1225,9 @@ only screen and (min-resolution: 144dpi) {
 	transform: translate(-50%, -75%);
 	text-align: center;
 }
+.sticker__content__image {
+	display: none;
+}
 .sticker__content .sticker__text:first-child {
 	font-size: 34px;
 	font-weight: 800;
@@ -1239,7 +1242,7 @@ only screen and (min-resolution: 144dpi) {
 	text-transform: uppercase;
 	color: #000;
 }
-.sticker__content .sticker__text:last-child {
+.sticker__content .sticker__text:nth-child(3) {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 43px;
@@ -1247,7 +1250,7 @@ only screen and (min-resolution: 144dpi) {
 	color: #c19b61;
 }
 .guarantee__content {
-	width: 830px;
+	max-width: 830px;
 }
 .guarantee__content__caption {
 	font-size: 24px;
@@ -1257,6 +1260,7 @@ only screen and (min-resolution: 144dpi) {
 	color: #000;
 }
 .guarantee__content__text {
+	margin-top: -14px;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 20px;
