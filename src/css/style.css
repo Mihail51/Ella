@@ -1150,6 +1150,13 @@ only screen and (min-resolution: 144dpi) {
 		background-size: 100%;
 	}
 }
+.bonus__description_7, 
+.bonus__description_8, 
+.bonus__description_9, 
+.bonus__description_10, 
+.bonus__description_11 {
+	padding: 50px 27px;
+}
 .bonus__name {
 	font-size: 20px;
 	font-weight: 700;
@@ -1157,12 +1164,18 @@ only screen and (min-resolution: 144dpi) {
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
 }
+.bonus__name .bonus_9 {
+	display: block;
+}
 .bonus__description__text {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
 	letter-spacing: 0.1em;
 	margin: 30px auto;
+}
+.bonus__description__text span {
+	display: block;
 } 
 .bonus__description__subtitle {
 	font-size: 18px;
