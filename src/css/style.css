@@ -988,6 +988,7 @@ figcaption p span {
 	box-sizing: border-box;
 }
 .packages__package_1 {
+	margin-bottom: 55px;
 	background: linear-gradient(180deg, #01692A 0%, rgba(0, 0, 0, 0.9) 100%);
 } 
 .packages__package_2 {
@@ -1028,6 +1029,11 @@ figcaption p span {
 	font-weight: 600;
 	line-height: 36px;
 	letter-spacing: 0.1em;
+	color: #fff2df;
+}
+.package__scroll legend {
+	background: url(../images/bage_1.svg) no-repeat left center;
+	background-size: 25px;
 }
 .package__scroll__item, 
 .package__bonuses__item, 
