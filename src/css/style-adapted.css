@@ -111,6 +111,9 @@
 	.package__title, .bonus__title {
 		width: 100%;
 	}
+	.question__text span {
+		line-height: 30px;
+	}
 
 /*	.guarantee__content__text {
 		font-size: 14px;
@@ -802,5 +805,22 @@
 	}
 	.guarantee__content__text:last-child {
 		margin-bottom: 12.5vw;
+	}
+
+	.question__conteiner {
+		padding: 0 6.25vw;
+	}
+	.question__wrapper {
+		height: 46.875vw;
+		min-height: auto;
+		margin: 5.31vw auto 6.56vw;
+	}
+	.question__text {
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.question__text span {
+		line-height: 5vw;
+		margin-bottom: 5.625vw;
 	}
 }

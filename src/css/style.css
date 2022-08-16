@@ -1326,6 +1326,7 @@ only screen and (min-resolution: 144dpi) {
 	color: #000;
 }
 .question__text span {
+	display: block;
 	font-weight: 700;
 	line-height: 40px;
 }
