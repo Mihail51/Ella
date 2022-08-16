@@ -1341,6 +1341,7 @@ only screen and (min-resolution: 144dpi) {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	box-sizing: border-box;
 }
 .total__subtitle {
 	width: 100%;
