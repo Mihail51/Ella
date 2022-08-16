@@ -30,7 +30,7 @@
 	.structure__modul {
 		width: 83.45vw;
 	}
-	.package__title {
+	.package__title, .bonus__title {
 		width: 100%;
 	}
 }
@@ -101,7 +101,7 @@
 	.structure__modul {
 		width: 83.45vw;
 	}
-	.package__title {
+	.package__title, .bonus__title {
 		width: 100%;
 	}
 }
@@ -218,7 +218,7 @@
 	.structure__modul {
 		width: 80.45vw;
 	}
-	.package__title {
+	.package__title, .bonus__title {
 		width: 100%;
 	}
 }
@@ -709,5 +709,48 @@
 		margin: 8.75vw auto 12.19vw;
 		font-size: 5vw;
 		line-height: 6.25vw;
+	}
+
+	.bonus__title {
+		min-height: 19.69vw;
+		padding: 0 6.25vw;
+	}
+	.bonus__heading {
+		font-size: 5vw;
+		line-height: 5.625vw;
+	}
+	.bonus__conteiner {
+		padding: 0;
+	}
+	.bonus__subtitle {
+		margin-top: -4.69vw;
+		font-size: 3.125vw;
+		line-height: 3.75vw;
+	}
+	.bonus__description {
+		width: 89.06vw;
+		height: auto;
+		padding: 6.25vw 3.125vw;
+		margin: 4.375vw auto;
+		border-radius: 9.375vw;
+		background-size: cover;
+		box-sizing: border-box;
+	}
+	.bonus__name {
+		font-size: 4.375vw;
+		line-height: 7.5vw;
+	}
+	.bonus__description__text {
+		margin: 6.25vw auto;
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.bonus__description img {
+		position: relative;
+		width: 12.5vw;
+		height: 12.5vw;
+		left: 0;
+		top: 0;
+		transform: none;
 	}
 }
