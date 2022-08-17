@@ -1,3 +1,9 @@
+@media (max-width: 1270px) {
+	.button-packs__conteiner{
+		max-width: 1265px;
+		width: auto;
+	}
+}
 @media (max-width: 1200px) {
 	.conteiner {
 		width: 960px;
@@ -256,6 +262,9 @@
 	}
 	.faq__answer {
 		width: 520px;
+	}
+	.join__heading {
+		font-size: 40px;
 	}
 }
 @media (max-width: 576px) {
@@ -878,5 +887,90 @@
 		font-size: 4.06vw;
 		background-size: 5vw;
 		background-position-y: top;
+	}
+	/* FAQ */
+
+	/* ASK */
+	.ask__wrapper {
+		margin: 17px auto;
+	}
+	.ask__heading, .ask__content {
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.ask__heading {
+		margin: 9.38vw auto;
+	}
+	.ask__description {
+		margin: 20px auto;
+	}
+	.ask__item {
+		margin: 10px 0;
+	}
+	.ask__term {
+		margin: 0 auto;
+	}
+
+	.invit__wrapper {
+		height: 57.5vw;
+		min-height: auto;
+		margin: 4.69vw auto;
+	}
+	.invit__heading, .invit__text {
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.invit__wrapper .invitation__image {
+		width: 7.81vw;
+		left: 25%;
+		top: -17.85vw;
+		transform: rotate(-33.59deg) translateX(-50%);
+	}
+
+	.chance__wrapper {
+		height: 39.06vw;
+		min-height: auto;
+		margin: 4.375vw auto;
+		padding: 6.25vw 0;
+	}
+	.chance__heading {
+		font-size: 4.375vw;
+		line-height: 5vw;
+		margin-bottom: 0;
+	}
+	.chance__text {
+		font-size: 4.375vw;
+		line-height: 5.31vw;
+	}
+
+	.button-packs__conteiner {
+		padding: 0 18px;
+	}
+	.button-packs__wrapper {
+		margin: 5.31vw auto;
+	}
+	.button-pack {
+		width: 100%;
+		height: 57.5vw;
+		border-radius: 6.25vw;
+		margin-bottom: 2.5vw;
+	}
+	.button-pack__cards {
+		height: 6.56vw;
+		margin: 4.375vw auto 2.81vw;
+	}
+	.button-pack__cards img {
+		width: 10.31vw;
+		margin: auto 0.78vw;
+	}
+	.button-pack .package__price {
+		margin-top: 0;
+	}
+	.button-pack button {
+		width: 70vw;
+		height: 11.13vw;
+		border-radius: 6.25vw;
+		font-size: 5vw;
+		line-height: 6.25vw;
 	}
 }

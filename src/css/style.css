@@ -1550,7 +1550,7 @@ only screen and (min-resolution: 144dpi) {
 	color: #fff;
 }
 .chance__text {
-	width: 1130px;
+	max-width: 1130px;
 	font-size: 34px;
 	font-weight: 500;
 	line-height: 44px;
@@ -1564,13 +1564,15 @@ only screen and (min-resolution: 144dpi) {
 }
 .button-packs__wrapper {
 	margin: 55px auto;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .button-pack {
 	width: 605px;
-	height: 368px;
+	height: 371px;
 	border-radius: 61px;
+	margin-bottom: 20px;
 	color: #fff;
 }
 .button-pack_1 {
@@ -1579,11 +1581,25 @@ only screen and (min-resolution: 144dpi) {
 .button-pack_2 {
 	background: linear-gradient(180deg, rgba(7, 198, 82, 0.95) 0%, rgba(0, 0, 0, 0.855) 100%);
 }
+.button-pack .package__price {
+	margin: 0 auto;
+	margin-top: -20px;
+}
+.button-pack__cards {
+	max-height: 72px;
+  	margin: 32px auto 16px;
+  	display: block;
+  	text-align: center;
+}
+.button-pack__cards img {
+	height: 100%;
+	margin: 0 7px;
+}
 .button-pack button {
 	display: block;
 	width: 418px;
 	height: 57px;
-	margin: 58px auto;
+	margin: 0 auto;
 	border-radius: 29px;
 	background: linear-gradient(88.35deg, #E9A936 2.33%, #FFE499 23.08%, #E09C28 49.21%, #F5CC73 91.33%, #FFE397 98.77%);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1617,7 +1633,7 @@ only screen and (min-resolution: 144dpi) {
 	color: #fff;
 }
 .join__text {
-	width: 870px;
+	max-width: 870px;
 	font-size: 30px;
 	font-weight: 600;
 	line-height: 34px;
