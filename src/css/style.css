@@ -1287,7 +1287,7 @@ only screen and (min-resolution: 144dpi) {
 .faq__wrapper details {
 	position: relative;
 	display: block;
-	margin: 40px auto;
+	margin: 10px auto;
 }
 .faq__wrapper summary {
 	width: 1121px;
@@ -1305,18 +1305,22 @@ only screen and (min-resolution: 144dpi) {
 }
 .faq__wrapper details[open] {
 	margin-left: 9px;
-	margin-bottom: -44px;
+/*	margin-bottom: -44px;  */
 }
 .faq__wrapper details[open] p {
-	-webkit-animation: spoiler 1s;
-	-moz-animation: spoiler 1s;
-	-ms-animation: spoiler 1s;
-	-o-animation: spoiler 1s;
-	animation: spoiler 1s;
+	-webkit-animation: spoiler 3s;
+	-moz-animation: spoiler 3s;
+	-ms-animation: spoiler 3s;
+	-o-animation: spoiler 3s;
+	animation: spoiler 3s;
 }
 @keyframes spoiler {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {max-height: 0;
+		opacity: 0;
+	}
+	100% {max-height: 10em;
+		opacity: 1;
+	}
 }
 .faq__wrapper details summary::after {
 	content: "+";
