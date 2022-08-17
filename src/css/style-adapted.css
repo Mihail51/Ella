@@ -40,6 +40,12 @@
 	.guarantee__content {
 		text-align: center;
 	}
+	.faq__wrapper summary {
+		width: 940px;
+	}
+	.faq__answer {
+		width: 940px;
+	}  
 }
 @media (max-width: 992px) {
 	.conteiner {
@@ -119,6 +125,12 @@
 	}
 	.total__item {
 		box-sizing: border-box;
+	}
+	.faq__wrapper summary {
+		width: 700px;
+	}
+	.faq__answer {
+		width: 700px;
 	}
 
 }
@@ -237,6 +249,13 @@
 	}
 	.package__title, .bonus__title {
 		width: 100%;
+	}
+	.faq__wrapper summary {
+		width: 520px;
+		height: 80px;
+	}
+	.faq__answer {
+		width: 520px;
 	}
 }
 @media (max-width: 576px) {
