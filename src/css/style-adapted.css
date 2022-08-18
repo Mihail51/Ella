@@ -890,6 +890,46 @@
 	}
 	/* FAQ */
 
+	.faq__conteiner {
+  		padding: 0 16px;
+	}
+	.faq__wrapper {
+		min-height: 100.94vw;
+		margin: 5.32vw auto;
+	}
+	.faq__heading {
+		font-size: 5vw;
+		line-height: 5vw;
+		margin: 8.44vw auto 4.375vw;
+	}
+	.faq__wrapper details {
+		margin: 1.875vw auto;
+	}
+	.faq__wrapper details:last-child {
+		margin-bottom: 9.375vw;
+	}
+	.faq__wrapper summary {
+		width: 89.375vw;
+		min-height: 10.625vw;
+		height: auto;
+		font-size: 3.44vw;
+		line-height: 3.44vw;
+		padding: 5px 40px 5px 20px;
+	}
+	.faq__wrapper details summary::after, 
+	.faq__wrapper details[open] summary::after {
+		right: 20px;
+	} /*
+	.faq__wrapper details[open] {
+		margin-left: 0.3125vw;
+	}  */
+	.faq__answer {
+		width: 89.375vw;
+		font-size: 3.44vw;
+		line-height: 3.75vw;
+		padding: 0 12.5vw 0 6.25vw;
+	}
+
 	/* ASK */
 	.ask__wrapper {
 		margin: 17px auto;
@@ -972,5 +1012,17 @@
 		border-radius: 6.25vw;
 		font-size: 5vw;
 		line-height: 6.25vw;
+	}
+
+	.join__wrapper {
+		min-height: 41.875vw;
+		margin: 5vw auto;
+	}
+	.join__heading, .join__text {
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.join__heading {
+		margin-bottom: 0;
 	}
 }
