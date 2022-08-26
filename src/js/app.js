@@ -2,7 +2,7 @@
 const select = document.querySelector('select');
 const allLang = ['ru', 'he'];
 
-let page = document.querySelector('.page');
+//let page = document.getElementById("mystyle").href="css/style.css";
 
 select.addEventListener('change', changeURLLanguage);
 
@@ -35,13 +35,11 @@ function changeLanguage() {
 	
 	if (lang === "ru") {
 		console.log('кнопка нажата');
-		page.classList.remove('page__lanquage_he');
-		page.classList.add('page__lanquage_ru');
+		document.getElementById("mystyle").href="css/style.css";
 	} else {
 		console.log('кнопка нажата');
-		page.classList.remove('page__lanquage_ru');
-		page.classList.add('page__lanquage_he');
-	}
+		document.getElementById("mystyle").href="css/style-rtl.css";
+	}  
 }
 
 
