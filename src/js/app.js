@@ -36,10 +36,12 @@ function changeLanguage() {
 	if (lang === "ru") {
 		console.log('кнопка нажата');
 		document.getElementById("mystyle").href="css/style.css";
+		document.getElementById("mystyle-adapted").href="css/style-adapted.css"; 
 	} else {
 		console.log('кнопка нажата');
 		document.getElementById("mystyle").href="css/style-rtl.css";
-	}  
+		document.getElementById("mystyle-adapted").href="css/style-adapted-rtl.css"; 
+	}
 }
 
 

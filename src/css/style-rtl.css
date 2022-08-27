@@ -75,6 +75,7 @@ img {
 	display: flex;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
+	direction: rtl;
 }
 
 /* HEADER */
@@ -92,6 +93,7 @@ img {
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
+	direction: rtl;
 }
 /* LOGO */
 .header__logo {
@@ -109,6 +111,7 @@ img {
 	padding: 0;
 	list-style: none;
 	margin: 0 44px;
+	direction: rtl;
 }
 .menu__item {
 	display: inline;
@@ -204,6 +207,7 @@ img {
 	flex-direction: column;
 	min-height: 571px;
 	margin-top: 18px;
+/*	direction: rtl;  */
 }
 .propose__text_1 {
 	font-size: 38px;
@@ -336,7 +340,7 @@ img {
 .about__wrapper {
 	min-height: 592px;
 	margin: 55px auto;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .about__content {
@@ -382,6 +386,12 @@ img {
 	left: 14px;
 	background: url(../images/Ella-2.webp) no-repeat top center;
 	background-size: cover;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	
 }	
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -608,7 +618,7 @@ only screen and (min-resolution: 144dpi) {
 .get__line {
 	position: absolute;
 	width: 4px;
-	height: 1255px;
+	height: 1100px;
 	right: calc(50% - 555px);
 	top: 155px;
 /*	-webkit-transform: translate(-555px, -54% );
@@ -746,6 +756,7 @@ only screen and (min-resolution: 144dpi) {
 	position: absolute;
 	right: -47px;
 	top: -29px;
+	transform: rotateZ(33deg);
 }
 .review__text {
 	width: 740px;
@@ -858,7 +869,7 @@ figcaption p span {
 	color: #fff;
 	transform: rotate(90deg) translate(-50%, -50%);
 	margin: 0;
-	top: 75%;
+	top: 90%;
 	right: -155px;
 	text-decoration: underline;  
 	text-decoration-thickness: 4px;
@@ -986,7 +997,7 @@ figcaption p span {
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	z-index: 10;
+	z-index: 1;
 }
 .packages__package {
 	width: 605px;
@@ -1125,7 +1136,7 @@ figcaption p span {
 .bonus__description {
 	position: relative;
 	width: 380px;
-	height: 420px;
+	height: 358px;
 	border-radius: 66px;
 	padding: 50px 10px;
 	margin: 30px 12px;
