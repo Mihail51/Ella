@@ -8,12 +8,23 @@ html {
 	position: relative;
 	margin: 0 auto;
 	min-width: 320px;
-	background-image: url(../images/Ella-2.webp);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center top;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;  
+}
+.page:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-image: url(../images/Ella-2.webp);
+	background-position: center top;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -21,12 +32,12 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-resolution: 1.5dppx),
 only screen and (min-resolution: 144dpi) {
-	.page {
+	.page:after {
 		background-image: url(../images/Ella-2@2.webp);
 		background-size: cover;
 	}
 }
-.no-webp .page {
+.no-webp .page:after {
 	background-image: url(../images/Ella-2.jpg);
 	background-size: cover;
 }
@@ -35,7 +46,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-resolution: 1.5dppx),
 only screen and (min-resolution: 144dpi) {
-	.no-webp .page {
+	.no-webp .page:after {
 		background-image: url(../images/Ella-2@2.jpg);
 		background-size: cover;
 	}
