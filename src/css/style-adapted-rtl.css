@@ -148,6 +148,54 @@
 		left: 50px;
 		bottom: 50px;
 	}
+	.page:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -10;
+	background-image: url(../images/Ella-2.webp);
+	background-position: center top;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-resolution: 1.5dppx),
+	only screen and (min-resolution: 144dpi) {
+		.page:after {
+			background-image: url(../images/Ella-2@2.webp);
+			background-size: cover;
+		}
+	}
+	.no-webp .page:after {
+		background-image: url(../images/Ella-2.jpg);
+		background-size: cover;
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-resolution: 1.5dppx),
+	only screen and (min-resolution: 144dpi) {
+		.no-webp .page:after {
+			background-image: url(../images/Ella-2@2.jpg);
+			background-size: cover;
+		}
+	}
+	.bgimg {
+		background: none;
+		border: none;
+		margin: 0;
+	}
+	.bgimg_6:before {
+		background: none;
+	}
 	.header__logo {
 		width: 44px;
 		height: 44px;

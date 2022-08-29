@@ -10,7 +10,7 @@ html {
 	min-width: 320px;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;  
-}
+} /*
 .page:after {
 	content: "";
 	position: fixed;
@@ -50,7 +50,7 @@ only screen and (min-resolution: 144dpi) {
 		background-image: url(../images/Ella-2@2.jpg);
 		background-size: cover;
 	}
-} /* 
+} *//* 
 .page__lanquage_heb {
 	direction: rtl;
 } 
@@ -87,6 +87,17 @@ img {
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
 	direction: rtl;
+}
+.bgimg {
+	border: 1px solid transparent;
+	position: relative;
+	height: 100%;
+	margin: -75px auto;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: -1;
 }
 
 /* HEADER */
@@ -207,6 +218,43 @@ img {
 	color: #e6c492;
 	border: none;
 }
+
+.bgimg_1 {
+	background-image: url(../images/background-1.jpg);
+	margin-top: 85px;
+}
+.bgimg_3 {
+	background-image: url(../images/background-3.jpg);
+}
+.bgimg_4 {
+	background-image: url(../images/background-4.jpg);
+}
+.bgimg_5 {
+	background-image: url(../images/background-5.jpg);
+	margin-top: 55px;
+}
+.bgimg_6 {
+	background-image: url(../images/background-6.jpg);
+	background-size: 100% 100%;
+}  /*
+.bgimg_6:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 0;
+	height: 100%;
+}  */
+.bgimg_7 {
+	background-image: url(../images/background-7.jpg);
+	margin-top: 75px;
+}  /*
+.bgimg_8 {
+	background-image: url(../images/background-8.jpg);
+}  */
 
 
 /* Предложение курса */
@@ -714,6 +762,8 @@ only screen and (min-resolution: 144dpi) {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: -5px;
+/*	margin: 55px 0;  */
 }
 .review__heading, 
 .structure__heading  {
@@ -977,6 +1027,7 @@ figcaption p span {
 	display: block;
 	width: 100%;
 	min-height: 293px;
+	margin-top: 55px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1233,7 +1284,7 @@ only screen and (min-resolution: 144dpi) {
 }
 .guarantee__wrapper {
 	min-height: 332px;
-	margin: 55px auto;
+	margin-bottom: 55px;
 	justify-content: space-between;
 	align-items: center;
 }
