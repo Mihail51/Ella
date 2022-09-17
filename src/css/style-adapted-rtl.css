@@ -156,7 +156,7 @@
 	left: 0;
 	right: 0;
 	z-index: -10;
-	background-image: url(../images/Ella-2.webp);
+	background-image: url(../images/background-1.webp);
 	background-position: center top;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -170,12 +170,12 @@
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
 		.page:after {
-			background-image: url(../images/Ella-2@2.webp);
+			background-image: url(../images/background-1@2.webp);
 			background-size: cover;
 		}
 	}
 	.no-webp .page:after {
-		background-image: url(../images/Ella-2.jpg);
+		background-image: url(../images/background-1.jpg);
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -184,7 +184,7 @@
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
 		.no-webp .page:after {
-			background-image: url(../images/Ella-2@2.jpg);
+			background-image: url(../images/background-1@2.jpg);
 			background-size: cover;
 		}
 	}
@@ -192,6 +192,9 @@
 		background: none;
 		border: none;
 		margin: 0;
+	}
+	.bgimg_1 {
+		margin-top: 14vw;
 	}
 	.bgimg_6:before {
 		background: none;
@@ -205,7 +208,7 @@
 		width: 100%;
 		height: 100%;
 		right: -100%;
-		top: 84px;
+		top: 80px;
 		overflow: hidden;
 		background: rgba(0, 0, 0, 0.6);
 		z-index: 10;
@@ -320,14 +323,21 @@
 		width: 100%;
 		padding: 0 27px;
 	}
+	.wrapper {
+		margin: 6.25vw auto;
+	}
 	.header__wrapper {
 		height: 14vw;
 		min-height: auto;
+		margin: 0;
 	}
 	.header__logo {
 		width: 33px;
 		height: 33px;
 		right: 27px;
+	}
+	.header__nav {
+	  top: 14vw;
 	}
 	.hamb {
 		margin: 0 24px;
@@ -344,31 +354,37 @@
 		font-size: 10px;
 		line-height: 12px;
 	}
+
+	.bgimg_1 {
+	  margin-top: calc(14vw + 6.25vw);
+	}
 	/* Предложение курса */
 	.propose__wrapper {
-		min-height: 144.06vw;
+		min-height: 115.06vw;
+		padding: 0;
 	}
 	.propose__description {
 		width: 87.5vw;
 	}
 	.propose__text_1 {
-		font-size: 5.94vw;
+		font-size: 6.565vw;
 		font-weight: 682;
 		line-height: 7.19vw;
 		margin-top: 13.44vw;
+		margin-bottom: 0;
 	}
 	.propose__text_2 {
-		font-size: 5.94vw;
+		font-size: 6.565vw;
 		font-weight: 500;
 		line-height: 7.19vw;
 	}
 	.propose__text_3 {
-		font-size: 6.56vw;
+		font-size: 7.185vw;
 		line-height: 8.75vw;
-		margin: 9.38vw 0;
+		margin: 6.38vw 0;  
 	}
 	.propose__text_4 {
-		font-size: 4.22vw;
+		font-size: 4.845vw;
 		font-weight: 500;
 		line-height: 5vw;
 	}
@@ -384,17 +400,18 @@
 		margin-top: 25vw;
 	}
 	.propose__whatsapp {
-		width: 48px;
-		height: 48px;
+		width: 8.33vw;
+		height: 8.33vw;
 	}
 	.whatsapp__link {
-		left: 25px;
+		left: 4.34vw;
+		bottom: 32.3vw;
 	}
 
 	/* COURS */
 	.cours__wrapper {
 		min-height: 200px;
-		margin: 27px auto;
+/*		margin: 27px auto;  */
 		padding: 22px 0;
 	}
 	.cours__text {
@@ -481,7 +498,11 @@
 		padding: 25px 20px;
 	}
 	.improve__wrapper {
-		min-height: 0;
+		min-height: auto;
+	}
+	.improve__content {
+		min-height: 42.185vw;
+		margin-top: 9.375vw;
 	}
 	.improve__heading {
 		font-size: 4.375vw;
@@ -508,9 +529,10 @@
 	}
 	.answer__wrapper {
 		min-height: 559px;
-		margin: 7.5vw auto;
+	/*	margin: 7.5vw auto;  */
 	}
 	.answer__content {
+		min-height: 115.125vw;
 		margin-bottom: 15.62vw;
 		margin-top: 27.81vw;
 	}
@@ -534,7 +556,7 @@
 	.invitation__wrapper {
 		min-height: 230px;
 		margin: 0;
-		padding: 6.94vw 0;
+		padding-top: 6.94vw;
 	}
 	.invitation__text {
 		padding: 0;
@@ -554,7 +576,8 @@
 		top: -21.875vw;
 	}
 	.get__wrapper {
-		margin: 5.94vw auto;
+/*		margin: 5.94vw auto;  */
+		margin-bottom: 0;
 	}
 	.get__heading__conteiner {
 		height: 25.625vw;
@@ -562,6 +585,9 @@
 	.get__heading__conteiner h2 {
 		font-size: 5vw;
 		line-height: 6.25vw;
+	}
+	.get__items {
+		margin: 0;
 	}
 	.get__line {
 		width: 0.625vw;
@@ -574,6 +600,9 @@
 		padding: 7.19vw 0;
 		margin-right: 16.875vw!important;
 		margin: 5.94vw auto;
+	}
+	.get__item_4 .get__content {
+		margin-bottom: 0;
 	}
 	.get__caption {
 		width: 70.625vw;
@@ -607,8 +636,11 @@
 		margin: 5.94vw auto;
 	}
 	.review__item_1 {
-		min-height: 221px;
+		min-height: 170px;
 		margin-top: 0;
+	}
+	.review__item_2 {
+		margin-bottom: 0;
 	}
 	.review__item_1 .review__content {
 		padding: 0 20px;
@@ -618,6 +650,7 @@
 		height: 38.75vw;
 		top: -1.875vw;
 		right: 1.563vw;
+		transform: rotateZ(33deg);
 	}
 	.review__text {
 		width: 84%;
@@ -632,8 +665,8 @@
 	.lng__review__text_1 span {
 		line-height: 5vw;
 	}
-	.review__text .text2 {
-		display: inline;
+	.lng__review__text_2 {
+	  width: 70%;
 	}
 	.review__subject {
 		margin-top: 3.125vw;
@@ -663,7 +696,7 @@
 		font-size: 3.75vw;
 		line-height: 7.5vw;
 	}
-	figcaption p span {
+	figcaption p span, figcaption p .big {
 		display: inline;
 	}
 	.structure__heading__conteiner {
@@ -716,7 +749,7 @@
 	}
 	.goal__wrapper {
 		min-height: 50.31vw;
-		margin: 5.94vw auto;
+/*		margin: 5.94vw auto;  */
 	}
 	.goal__text {
 		width: 84.06vw;
@@ -726,6 +759,7 @@
 	} 
 	.package__title {
 		min-height: 39.375vw;
+		margin-top: 6.25vw;
 	}
 	.packages__heading {
 		height: 17.5vw;
@@ -808,6 +842,7 @@
 	.bonus__title {
 		min-height: 19.69vw;
 		padding: 0 6.25vw;
+		margin: 0;
 	}
 	.bonus__heading {
 		font-size: 5vw;
@@ -815,6 +850,9 @@
 	}
 	.bonus__conteiner {
 		padding: 0;
+	}
+	.bonus__content {
+		margin: 0;
 	}
 	.bonus__subtitle {
 		margin-top: -4.69vw;
@@ -852,7 +890,7 @@
 		width: 90.63vw;
 	}
 	.guarantee__wrapper {
-		margin: 0 auto;
+/*		margin: 0 auto;  */
 		padding: 8.81vw 0;
 	}
 	.guarantee__image img {
@@ -892,7 +930,7 @@
 	.question__wrapper {
 		height: 46.875vw;
 		min-height: auto;
-		margin: 5.31vw auto 6.56vw;
+/*		margin: 5.31vw auto 6.56vw;  */
 	}
 	.question__text {
 		font-size: 4.375vw;
@@ -907,7 +945,7 @@
 		padding: 0 4.375vw;
 	}
 	.total__wrapper {
-		height: 184.06vw;
+		height: 160.06vw;
 		min-height: auto;
 	}
 	.total__subtitle{
@@ -944,7 +982,7 @@
 	}
 	.faq__wrapper {
 		min-height: 100.94vw;
-		margin: 5.32vw auto;
+/*		margin: 5.32vw auto;  */
 	}
 	.faq__heading {
 		font-size: 5vw;
@@ -981,7 +1019,7 @@
 
 	/* ASK */
 	.ask__wrapper {
-		margin: 17px auto;
+/*		margin: 17px auto;  */
 	}
 	.ask__heading, .ask__content {
 		font-size: 4.375vw;
@@ -1001,9 +1039,9 @@
 	}
 
 	.invit__wrapper {
-		height: 57.5vw;
+		height: 40.5vw;
 		min-height: auto;
-		margin: 4.69vw auto;
+/*		margin: 4.69vw auto;  */
 	}
 	.invit__heading, .invit__text {
 		font-size: 4.375vw;
@@ -1019,7 +1057,7 @@
 	.chance__wrapper {
 		height: 39.06vw;
 		min-height: auto;
-		margin: 4.375vw auto;
+/*		margin: 4.375vw auto;  */
 		padding: 6.25vw 0;
 	}
 	.chance__heading {
@@ -1036,7 +1074,7 @@
 		padding: 0 18px;
 	}
 	.button-packs__wrapper {
-		margin: 5.31vw auto;
+/*		margin: 5.31vw auto;  */
 	}
 	.button-pack {
 		width: 100%;
@@ -1065,7 +1103,7 @@
 
 	.join__wrapper {
 		min-height: 41.875vw;
-		margin: 5vw auto;
+/*		margin: 5vw auto;  */
 	}
 	.join__heading, .join__text {
 		font-size: 4.375vw;
@@ -1073,5 +1111,32 @@
 	}
 	.join__heading {
 		margin-bottom: 0;
+	}
+
+	.contacts__wrapper {
+		min-height: 46.875vw;
+	}
+	.contacts__heading {
+		font-size: 4.375vw;
+		line-height: 5vw;
+	}
+	.contacts__items {
+		width: 90%;
+		padding: 0;
+		justify-content: flex-start;
+	}
+	.contacts__item {
+		font-size: 4.375vw;
+		line-height: 8vw;
+		padding-left: 10vw;
+	}
+	.contacts__item_1 {
+		background-size: 5.21vw;
+	}
+	.contacts__item_2 {
+		background-size: 5.21vw;
+	}
+	.contacts__item_3 {
+		background-size: 5.21vw;
 	}
 }

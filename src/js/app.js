@@ -35,12 +35,18 @@ function changeLanguage() {
 	
 	if (lang === "ru") {
 		console.log('кнопка нажата');
+		document.getElementById("mylang").lang="ru"
 		document.getElementById("mystyle").href="css/style.css";
 		document.getElementById("mystyle-adapted").href="css/style-adapted.css"; 
+		document.getElementById("my-description").content="Описание"; 
+		document.getElementById("my-keywords").content="Гиперреализм, Голосовая техника, Микро пигментация в Воласковой техники, Перманентный макияж  аппаратный волосковой техники"; 
 	} else {
 		console.log('кнопка нажата');
+		document.getElementById("mylang").lang="he"
 		document.getElementById("mystyle").href="css/style-rtl.css";
 		document.getElementById("mystyle-adapted").href="css/style-adapted-rtl.css"; 
+		document.getElementById("my-description").content="תיאור"; 
+		document.getElementById("my-keywords").content="היפריאליזם, שיטת השערה עם מכשיר חשמלי, איפור קבוע בשיטת השיערה"; 
 	}
 }
 

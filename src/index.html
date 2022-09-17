@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="mylang" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Название сайта</title>
-	<meta name="description" content="описание не длиннее 155 символов">
-  	<meta name="keywords" content="мета-теги, шаблон, html, css">
+	<meta id="my-description" name="description" content="описание не длиннее 155 символов">
+  	<meta id="my-keywords" name="keywords" content="мета-теги, шаблон, html, css">
   	<link rel="stylesheet" href="css/fonts.css">
   	<link rel="stylesheet" href="css/normalize.css">
   	<link id="mystyle" rel="stylesheet" href="css/style.css">
@@ -23,13 +23,12 @@
 				<label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
 				<!-- MENU -->
 				<nav class="nav header__nav">
-					<label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
 					<ul class="menu header__menu">
 						<li class="item menu__item header__menu__item_1"><a class="lng__header-menu_1" href="#about">Обо мне</a></li>
 						<li class="item menu__item header__menu__item_2"><a class="lng__header-menu_2" href="#review">О курсе</a></li>
 						<li class="item menu__item header__menu__item_3"><a class="lng__header-menu_3" href="#packages">Пакеты</a></li>
 						<li class="item menu__item header__menu__item_4"><a class="lng__header-menu_4" href="#faq">Вопросы</a></li>
-						<li class="item menu__item header__menu__item_5"><a class="lng__header-menu_5" href="#">Контакты</a></li>
+						<li class="item menu__item header__menu__item_5"><a class="lng__header-menu_5" href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<!-- Language menu -->
@@ -367,9 +366,9 @@
 		  			</div>
 		  		</div>
 		  	</section>
-		  </div>  
+<!--		  </div>  -->  
 		<!-- PACKAGES -->
-		<div class="bgimg bgimg_6">
+<!--		<div class="bgimg bgimg_6">  -->
 		  	<section class="packages" id="packages">
 		  		<div class="title package__title conteiner">
 		  			<h2 class="heading packages__heading lng__packages__heading">ПАКЕТЫ <span>Y-BROWS</span><span>ВЫБЕРИТЕ ОПТИМАЛЬНЫЙ ДЛЯ ВАС</span></h2>
@@ -426,7 +425,7 @@
 		  							<li class="item package__additionally__item lng__package__additionally__item lng__package__additionally_1">Зеркальный эффект (видео урок + PDF)</li>
 		  							<li class="item package__additionally__item lng__package__additionally__item lng__package__additionally_2">SOS техники (запись вебинара + PDF)</li>
 		  							<li class="item package__additionally__item lng__package__additionally__item lng__package__additionally_3">Гид по фотосъемке (PDF)</li>
-		  							<li class="item package__additionally__item lng__package__additionally__item lng__package__additionally_4">Дополнительный мини-курс Гиперреализм (видео уроки)</li>
+<!--		  							<li class="item package__additionally__item lng__package__additionally__item lng__package__additionally_4">Дополнительный мини-курс Гиперреализм (видео уроки)</li>  -->
 		  						</ul>
 		  						<button onclick="window.location.href = '#';" class="lng__butt__packages__package_2">Купить</button>
 		  					</div>
@@ -674,6 +673,19 @@
 		   			<div class="wrapper join__wrapper">
 		   				<h2 class="heading join__heading lng__join__heading">Присоединяйтесь</h2>
 		   				<p class="text join__text lng__join__text">и получите доступ на целый год прямо сейчас</p>
+		   			</div>
+		   		</div>
+		   	</section>
+		   	<!-- CONTACTS -->
+		   	<section id="contacts" class="contacts">
+		   		<div class="conteiner contacts__conteiner">
+		   			<div class="wrapper contacts__wrapper">
+		   				<h2 class="heading contacts__heading lng__contacts__heading">контакты</h2>
+		   				<ul class="items contacts__items">
+		   					<li class="item contacts__item contacts__item_1">+972 50 450 59 14</li>
+		   					<li class="item contacts__item contacts__item_2">ybrowsonline@gmail.com</li>
+		   					<li class="item contacts__item contacts__item_3">ybrows.co.il</li>
+		   				</ul>
 		   			</div>
 		   		</div>
 		   	</section>
