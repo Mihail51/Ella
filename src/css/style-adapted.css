@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1270px) {
 	.button-packs__conteiner{
 		max-width: 1265px;
@@ -40,7 +47,10 @@
 		width: 100%;
 	}
 	.guarantee__wrapper {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		padding: 25px 0;
 	}
 	.guarantee__content {
@@ -59,10 +69,17 @@
 	}
 	.header__menu {
 		width: 465px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.menu__item {
 		margin: 0 10px;
@@ -130,7 +147,8 @@
 		width: 555px;
 	}
 	.total__item {
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 	.faq__wrapper summary {
 		width: 700px;
@@ -158,14 +176,10 @@
 	z-index: -10;
 	background-image: url(../images/background-1.webp);
 	background-position: center top;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+ background-size: cover;
 	}
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min--moz-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
@@ -179,7 +193,6 @@
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min--moz-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
@@ -212,6 +225,8 @@
 		overflow: hidden;
 		background: rgba(0, 0, 0, 0.6);
 		z-index: 10;
+		-webkit-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
 		transition: all .2s ease-out;
 	}
 	.header__menu {
@@ -421,6 +436,8 @@
 		text-transform: capitalize;
 	}
 	.about {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 155, 97, 0.88)), color-stop(32.81%, #E6C492), color-stop(66.67%, #D8B989), to(#000000));
+		background: -o-linear-gradient(top, rgba(193, 155, 97, 0.88) 0%, #E6C492 32.81%, #D8B989 66.67%, #000000 100%);
 		background: linear-gradient(180deg, rgba(193, 155, 97, 0.88) 0%, #E6C492 32.81%, #D8B989 66.67%, #000000 100%);
 	}
 	.about__foto {
@@ -432,7 +449,6 @@
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min--moz-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
@@ -446,7 +462,6 @@
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min--moz-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
@@ -461,6 +476,8 @@
 		right: 0;
 		left: 0;
 		top: 93px;
+		background: -webkit-gradient(linear, left bottom, left top, color-stop(12.06%, #E3C18E), color-stop(60.46%, rgba(230, 196, 146, 0.83)), color-stop(91.49%, rgba(230, 196, 146, 0)));
+		background: -o-linear-gradient(bottom, #E3C18E 12.06%, rgba(230, 196, 146, 0.83) 60.46%, rgba(230, 196, 146, 0) 91.49%);
 		background: linear-gradient(360deg, #E3C18E 12.06%, rgba(230, 196, 146, 0.83) 60.46%, rgba(230, 196, 146, 0) 91.49%);
 	}
 	.about__wrapper {
@@ -471,7 +488,8 @@
 	}
 	.about__logo {
 		width: 143px;
-		align-self: flex-start;
+		-ms-flex-item-align: start;
+		    align-self: flex-start;
 		margin-left: calc(50vw - 160px);
 	}
 	.about__text {
@@ -565,7 +583,9 @@
 	.invitation__image {
 		width: 7.81vw;
 		left: 50%;
-		transform: rotate(-33.59deg) translateX(-50%);
+		-webkit-transform: rotate(-33.59deg) translateX(-50%);
+		    -ms-transform: rotate(-33.59deg) translateX(-50%);
+		        transform: rotate(-33.59deg) translateX(-50%);
 		top: -21.875vw;
 	}
 	.get__wrapper {
@@ -648,7 +668,8 @@
 		width: 100%;
 		font-size: 3.75vw;
 		line-height: 5vw;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		color: #000;
 	}
 	.lng__review__text_1 {
@@ -667,7 +688,9 @@
 		line-height: 12, 5vw;
 	}
 	.review__includes__items {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.review__includes__item {
 		width: 100%;
@@ -711,7 +734,9 @@
 		line-height: 12.5vw;
 		left: 50%;
 		top: 0;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		text-align: center;
 		text-decoration: none;
 		border-bottom: 4px solid #fff;
@@ -783,7 +808,8 @@
 		width: 21.25vw;
 		height: 5.94vw;
 		margin: 1.56vw auto 3.44vw;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		font-size: 4.375vw;
 		line-height: 6.25vw;
 		padding-right: 0;
@@ -859,7 +885,8 @@
 		margin: 4.375vw auto;
 		border-radius: 9.375vw;
 		background-size: cover;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 	.bonus__name {
 		font-size: 4.375vw;
@@ -876,7 +903,9 @@
 		height: 12.5vw;
 		left: 0;
 		top: 0;
-		transform: none;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
 	}
 
 	.guarantee__content {
@@ -895,7 +924,9 @@
 		height: 23.44vw;
 		top: 50%;
 		left: 51%;
-		transform: translate(-50%, -60%);
+		-webkit-transform: translate(-50%, -60%);
+		    -ms-transform: translate(-50%, -60%);
+		        transform: translate(-50%, -60%);
 	}
 	.sticker__text {
 		display: none;
@@ -958,7 +989,9 @@
 		height: 1.25vw;
 		left: 8.5vw;
 		top: 2.5vw;
-		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
 	}
 	.total__items_1 .total__item {
 		font-size: 4.06vw;
@@ -1044,7 +1077,9 @@
 		width: 7.81vw;
 		left: 25%;
 		top: -17.85vw;
-		transform: rotate(-33.59deg) translateX(-50%);
+		-webkit-transform: rotate(-33.59deg) translateX(-50%);
+		    -ms-transform: rotate(-33.59deg) translateX(-50%);
+		        transform: rotate(-33.59deg) translateX(-50%);
 	}
 
 	.chance__wrapper {
@@ -1116,7 +1151,9 @@
 	.contacts__items {
 		width: 90%;
 		padding: 0;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 	.contacts__item {
 		font-size: 4.375vw;
