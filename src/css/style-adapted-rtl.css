@@ -447,28 +447,46 @@
 		height: 216px;
 		top: 18px;
 		left: 0;
-		background: url(../images/Ella_1.webp) no-repeat center center;
+		background: none;
+		background-size: cover;
+	}
+	.about__foto:after {
+		content: "";
+		position: absolute;
+		width: 160px;
+		height: 216px;
+		top: 0;
+		left: 0;
+		background-image: url(../images/Ella_1.webp);
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
-		.about__foto {
-			background-image: url(../images/Ella_1@2.webp) no-repeat center center;
+		.about__foto:after {
+			background-image: url(../images/Ella_1@2.webp);
+			background-position: center center;
+			background-repeat: no-repeat;
 			background-size: cover;
 		}
 	}
-	.no-webp .about__foto {
-		background-image: url(../images/Ella_1.png) no-repeat center center;
+	.no-webp .about__foto:after {
+		background-image: url(../images/Ella_1.png);
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-resolution: 1.5dppx),
 	only screen and (min-resolution: 144dpi) {
-		.no-webp .about__foto {
-			background-image: url(../images/Ella_1@2.png) no-repeat center center;
+		.no-webp .about__foto:after {
+			background-image: url(../images/Ella_1@2.png);
+			background-position: center center;
+			background-repeat: no-repeat;
 			background-size: cover;
 		}
 	}
